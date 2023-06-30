@@ -1,12 +1,13 @@
 pipeline {
-	agent any
-	stages {
-		stage('Working with Jenkins') {
-			steps {
-				script {
-					println "Hi All, Welcome to Groovy/Pipeline Scripting"
-				}
-			}
-		}
-	}
+    agent any
+    stages {
+        stage(Working with variables){
+            steps {
+                script {
+                    val1 = 20
+                   println "my val1 is ${val1}"
+                }
+            }
+        }
+    }
 }
