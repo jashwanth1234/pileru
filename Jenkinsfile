@@ -1,18 +1,16 @@
-/* groovylint-disable NglParseError */
-
 pipeline {
     agent any
-    parameters {
-        choice choices: ['dev', 'prod', 'sit'], description: 'Select Environment', name: 'ENV'
-    } 
     stages {
-        stage('Working with variables') {
+        stage('Working with Jenkins){
             steps {
                 script {
-                    def val1 = 20
-                    println "my val1 is ${val1}"
-                    // parameters values
-                    println "my parameter value is ${params.ENV}"
+                    var1 == 10
+                    if (var1 == 10) {
+                        println "my var1 is 10"
+                    }
+                    else {
+                        println "my var1 value is not 10"
+                    }
                 }
             }
         }
