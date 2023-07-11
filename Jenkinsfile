@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Working with Jenkins){
+        stage('Working with Jenkins'){
             steps {
                 script {
                     var1 == 10
