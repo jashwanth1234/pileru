@@ -1,15 +1,13 @@
 pipeline {
     agent any
     stages {
-        stage('Working with Jenkins') {
+        stage ('stage1') {
             steps {
                 script {
-                    var1 == 10
-                    if (var1 == 10) {
-                        println "my var1 is 10"
-                    }
-                    else {
-                        println "my var1 value is not 10"
+                    myvar 1 = 1
+                    while (myvar 1 <= 10) {
+                        println "my var1 value is ${myvar1}"
+                        myvar1=myvar1+1
                     }
                 }
             }
